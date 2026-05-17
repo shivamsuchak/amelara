@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProductGrid from "@/components/product/ProductGrid";
 import { products, getFeaturedProducts } from "@/lib/data/products";
 import { Shield, Truck, RotateCcw, Sparkles } from "lucide-react";
+import FadeIn from "@/components/ui/FadeIn";
 
 const benefits = [
   { icon: Truck, title: "Free Shipping", desc: "On orders over $20" },
@@ -50,6 +51,7 @@ export default function Home() {
       </section>
 
       {/* Category Navigation */}
+      <FadeIn>
       <section className="py-12 px-4">
         <div className="mx-auto max-w-[1280px]">
           <div className="flex flex-wrap justify-center gap-4">
@@ -84,14 +86,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeIn>
 
-      {/* Featured Products */}
+      <FadeIn>
       <ProductGrid products={featured} title="Featured Products" />
+      </FadeIn>
 
-      {/* All Products */}
+      <FadeIn delay={100}>
       <ProductGrid products={products} title="Shop All" />
+      </FadeIn>
 
       {/* Editorial / Lifestyle Block */}
+      <FadeIn>
       <section className="py-20 px-4" style={{ background: "var(--gradient-subtle)" }}>
         <div className="mx-auto max-w-[1280px] flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left">
@@ -119,8 +125,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeIn>
 
       {/* Benefits Bar */}
+      <FadeIn>
       <section className="py-16 px-4">
         <div className="mx-auto max-w-[1280px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -136,8 +144,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </FadeIn>
 
       {/* Newsletter */}
+      <FadeIn>
       <section className="py-16 px-4 bg-cream">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="font-[family-name:var(--font-poppins)] text-2xl font-semibold text-gray-900">
@@ -162,6 +172,7 @@ export default function Home() {
           </form>
         </div>
       </section>
+      </FadeIn>
     </>
   );
 }
