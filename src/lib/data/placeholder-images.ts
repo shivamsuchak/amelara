@@ -6,7 +6,7 @@ export const squishyImages: Record<string, string> = {
   "rainbow-cat-squishy": "https://images.unsplash.com/photo-1535930749574-1399327ce78f?w=600&h=600&fit=crop",
   "galaxy-donut-squishy": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&h=600&fit=crop",
   "jumbo-strawberry-squishy": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&h=600&fit=crop",
-  "mini-animal-set": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=600&fit=crop",
+  "mini-animal-set": "https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?w=600&h=600&fit=crop",
   "fidget-pop-cube": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=600&h=600&fit=crop",
 };
 
