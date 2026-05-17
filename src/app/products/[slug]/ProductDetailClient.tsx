@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import Badge from "@/components/ui/Badge";
 import { useCartStore } from "@/lib/store/cart";
+import { getPlaceholderImage } from "@/lib/data/placeholder-images";
 import { Minus, Plus, ChevronDown, ChevronUp } from "lucide-react";
 import type { Product } from "@/lib/data/products";
 
@@ -28,7 +30,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
         slug: product.slug,
         name: product.name,
         price: product.price,
-        image: product.images[0] || "",
+        image: getPlaceholderImage(product.slug, product.category),
       });
     }
   };
@@ -54,11 +56,14 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
           {/* Image Gallery */}
           <div className="space-y-4">
             <div className="relative aspect-square rounded-[var(--radius-lg)] bg-gray-50 overflow-hidden shadow-[var(--shadow-soft)]">
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
-                <span className="text-7xl">
-                  {product.category === "squishy" ? "🧸" : "✨"}
-                </span>
-              </div>
+              <Image
+                src={getPlaceholderImage(product.slug, product.category)}
+                alt={product.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+                priority
+              />
               {product.badge && (
                 <div className="absolute top-4 left-4 z-10">
                   <Badge variant={product.badge}>

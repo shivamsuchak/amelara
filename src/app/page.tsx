@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import ProductGrid from "@/components/product/ProductGrid";
 import { products, getFeaturedProducts } from "@/lib/data/products";
@@ -116,11 +117,23 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex-1 flex gap-4">
-            <div className="flex-1 aspect-[3/4] rounded-[var(--radius-lg)] bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center text-5xl shadow-[var(--shadow-soft)]">
-              🧸
+            <div className="relative flex-1 aspect-[3/4] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-soft)]">
+              <Image
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&h=667&fit=crop"
+                alt="Colorful sensory toys"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover"
+              />
             </div>
-            <div className="flex-1 aspect-[3/4] rounded-[var(--radius-lg)] bg-gradient-to-br from-amber-50 to-amber-100 flex items-center justify-center text-5xl shadow-[var(--shadow-soft)] mt-8">
-              ✨
+            <div className="relative flex-1 aspect-[3/4] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-soft)] mt-8">
+              <Image
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&h=667&fit=crop"
+                alt="Premium cosmetics"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

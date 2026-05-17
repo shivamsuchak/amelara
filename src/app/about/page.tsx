@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Heart, Leaf, Star, Users } from "lucide-react";
 
@@ -42,11 +43,23 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex gap-4">
-            <div className="flex-1 aspect-[3/4] rounded-[var(--radius-lg)] bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center text-5xl shadow-[var(--shadow-soft)]">
-              🧸
+            <div className="relative flex-1 aspect-[3/4] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-soft)]">
+              <Image
+                src="https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500&h=667&fit=crop"
+                alt="Playful sensory toys"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover"
+              />
             </div>
-            <div className="flex-1 aspect-[3/4] rounded-[var(--radius-lg)] bg-gradient-to-br from-amber-50 to-amber-100 flex items-center justify-center text-5xl shadow-[var(--shadow-soft)] mt-8">
-              ✨
+            <div className="relative flex-1 aspect-[3/4] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-soft)] mt-8">
+              <Image
+                src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&h=667&fit=crop"
+                alt="Premium beauty serum"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

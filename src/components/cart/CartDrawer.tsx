@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { X, Minus, Plus, Trash2, Truck } from "lucide-react";
 import { useCartStore, getCartTotal, getCartCount, getShippingProgress } from "@/lib/store/cart";
@@ -93,9 +94,14 @@ export default function CartDrawer() {
                   key={item.id}
                   className="flex gap-3 p-3 rounded-[var(--radius-md)] bg-gray-50"
                 >
-                  {/* Image placeholder */}
-                  <div className="w-16 h-16 rounded-[var(--radius-sm)] bg-gray-200 flex-shrink-0 flex items-center justify-center text-xs text-gray-400">
-                    IMG
+                  <div className="relative w-16 h-16 rounded-[var(--radius-sm)] bg-gray-100 flex-shrink-0 overflow-hidden">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      fill
+                      sizes="64px"
+                      className="object-cover"
+                    />
                   </div>
 
                   <div className="flex-1 min-w-0">

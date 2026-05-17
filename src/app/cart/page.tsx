@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Minus, Plus, Trash2, Truck } from "lucide-react";
 import { useCartStore, getCartTotal, getCartCount, getShippingProgress } from "@/lib/store/cart";
@@ -45,8 +46,14 @@ export default function CartPage() {
                 key={item.id}
                 className="flex gap-4 p-4 rounded-[var(--radius-md)] bg-gray-50"
               >
-                <div className="w-20 h-20 rounded-[var(--radius-sm)] bg-gray-200 flex-shrink-0 flex items-center justify-center text-2xl">
-                  🛍
+                <div className="relative w-20 h-20 rounded-[var(--radius-sm)] bg-gray-100 flex-shrink-0 overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    sizes="80px"
+                    className="object-cover"
+                  />
                 </div>
                 <div className="flex-1 min-w-0">
                   <Link
