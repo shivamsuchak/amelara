@@ -284,6 +284,7 @@ export default function Home() {
           <form onSubmit={(e) => e.preventDefault()} className="mt-8 flex gap-3 max-w-md mx-auto">
             <input
               type="email"
+              required
               placeholder="Enter your email"
               className="flex-1 rounded-[var(--radius-xl)] bg-white px-5 py-3.5 text-base text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
               aria-label="Email for newsletter"

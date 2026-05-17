@@ -116,7 +116,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                   {quantity}
                 </span>
                 <button
-                  onClick={() => setQuantity(quantity + 1)}
+                  onClick={() => setQuantity(Math.min(99, quantity + 1))}
                   className="px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors"
                   aria-label="Increase quantity"
                 >

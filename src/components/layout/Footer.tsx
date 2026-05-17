@@ -58,6 +58,7 @@ export default function Footer() {
               >
                 <input
                   type="email"
+                  required
                   placeholder="Your email"
                   className="flex-1 rounded-[var(--radius-xl)] bg-white px-4 py-2.5 text-sm text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
                   aria-label="Email for newsletter"
