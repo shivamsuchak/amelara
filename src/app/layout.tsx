@@ -30,6 +30,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Amelara | Playful Luxury Shopping",
   description: "Discover squishy sensory toys and premium cosmetics at Amelara. Playful yet luxurious, designed for joy and beauty.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

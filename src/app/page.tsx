@@ -84,7 +84,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-700 leading-relaxed">
-              From squishy stress-relief to premium beauty — discover joy and elegance, all in one place.
+              From squishy stress-relief to premium beauty discover joy and elegance, all in one place.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link

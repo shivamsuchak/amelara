@@ -36,28 +36,19 @@ export default function AboutPage() {
               <span className="block text-primary">Elegance</span>
             </h2>
             <p className="mt-4 text-base text-gray-600 leading-relaxed">
-              We started Amelara because we couldn&apos;t find a brand that celebrated both sides of who we are — the part that loves a good squishy stress-reliever and the part that craves a luxurious skincare ritual.
+              We started Amelara because we couldn&apos;t find a brand that celebrated both sides of who we are the part that loves a good squishy stress-reliever and the part that craves a luxurious skincare ritual.
             </p>
             <p className="mt-4 text-base text-gray-600 leading-relaxed">
               Our curated collections bring together the most satisfying sensory toys and the most effective beauty products, all wrapped in a shopping experience that feels as good as the products themselves.
             </p>
           </div>
-          <div className="flex gap-4">
-            <div className="relative flex-1 aspect-[3/4] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-soft)]">
+          <div className="flex justify-center items-center">
+            <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-[var(--shadow-medium)]">
               <Image
-                src="https://images.unsplash.com/photo-1563396983906-b3795482a59a?w=500&h=667&fit=crop"
-                alt="Playful sensory toys"
+                src="/favicon.png"
+                alt="Amelara"
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="relative flex-1 aspect-[3/4] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-soft)] mt-8">
-              <Image
-                src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&h=667&fit=crop"
-                alt="Premium beauty serum"
-                fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="256px"
                 className="object-cover"
               />
             </div>
