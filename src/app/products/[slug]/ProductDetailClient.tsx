@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Badge from "@/components/ui/Badge";
 import { useCartStore } from "@/lib/store/cart";
-import { getPlaceholderImage } from "@/lib/data/placeholder-images";
 import { Minus, Plus, ChevronDown, ChevronUp } from "lucide-react";
 import type { Product } from "@/lib/data/products";
 
@@ -30,7 +29,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
         slug: product.slug,
         name: product.name,
         price: product.price,
-        image: getPlaceholderImage(product.slug, product.category),
+        image: product.images[0],
       });
     }
   };
@@ -57,7 +56,7 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
           <div className="space-y-4">
             <div className="relative aspect-square rounded-[var(--radius-lg)] bg-gray-50 overflow-hidden shadow-[var(--shadow-soft)]">
               <Image
-                src={getPlaceholderImage(product.slug, product.category)}
+                src={product.images[0]}
                 alt={product.name}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Badge from "@/components/ui/Badge";
 import { useCartStore } from "@/lib/store/cart";
-import { getPlaceholderImage } from "@/lib/data/placeholder-images";
 import type { Product } from "@/lib/data/products";
 
 interface ProductCardProps {
@@ -30,7 +29,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       slug: product.slug,
       name: product.name,
       price: product.price,
-      image: getPlaceholderImage(product.slug, product.category),
+      image: product.images[0],
     });
   };
 
@@ -42,7 +41,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       {/* Image */}
       <div className="relative aspect-square overflow-hidden rounded-t-[var(--radius-md)] bg-gray-50">
         <Image
-          src={getPlaceholderImage(product.slug, product.category)}
+          src={product.images[0]}
           alt={product.name}
           fill
           sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
