@@ -20,7 +20,7 @@ export const products: Product[] = [
   {
     id: "sq-001",
     slug: "kawaii-pretzel-squishy",
-    name: "Kawaii Pretzel Squishy Keychain – Cute Food Stress Relief Toy",
+    name: "Kawaii Pretzel Squishy Keychain Cute Food Stress Relief Toy",
     vendor: "Amelara",
     category: "squishy",
     price: 9.99,
@@ -34,7 +34,7 @@ export const products: Product[] = [
   {
     id: "sq-002",
     slug: "rainbow-boba-tea-squishy",
-    name: "Rainbow Boba Tea Squishy Charm – Cute Bubble Tea Keychain Toy",
+    name: "Rainbow Cake Squishy Charm  Cute Bubble Tea Keychain Toy",
     vendor: "Amelara",
     category: "squishy",
     price: 11.99,
@@ -47,7 +47,7 @@ export const products: Product[] = [
   {
     id: "sq-003",
     slug: "bear-paw-squishy",
-    name: "Cute Bear Paw Squishy Keychain – Kawaii Animal Stress Toy",
+    name: "Cute Bear Paw Squishy Keychain  Kawaii Animal Stress Toy",
     vendor: "Amelara",
     category: "squishy",
     price: 8.99,
@@ -61,7 +61,7 @@ export const products: Product[] = [
   {
     id: "sq-004",
     slug: "kawaii-toast-squishy",
-    name: "Kawaii Toast Squishy Keychain – Cute Bread Slice Stress Toy",
+    name: "Kawaii Toast Squishy Keychain  Cute Bread Slice Stress Toy",
     vendor: "Amelara",
     category: "squishy",
     price: 9.99,
@@ -73,7 +73,7 @@ export const products: Product[] = [
   {
     id: "sq-005",
     slug: "rainbow-burger-squishy",
-    name: "Rainbow Burger Squishy Keychain – Kawaii Hamburger Stress Toy",
+    name: "Rainbow Burger Squishy Keychain  Kawaii Hamburger Stress Toy",
     vendor: "Amelara",
     category: "squishy",
     price: 12.99,
@@ -87,7 +87,7 @@ export const products: Product[] = [
   {
     id: "sq-006",
     slug: "strawberry-cake-squishy",
-    name: "Strawberry Cake Slice Squishy – Cute Dessert Keychain Charm",
+    name: "Strawberry Cake Slice Squishy  Cute Dessert Keychain Charm",
     vendor: "Amelara",
     category: "squishy",
     price: 10.99,
@@ -102,7 +102,7 @@ export const products: Product[] = [
   {
     id: "cos-001",
     slug: "emerald-green-butterfly-nails",
-    name: "Emerald Green Gold Butterfly Press On Nails – Luxury Long Coffin Set",
+    name: "Emerald Green Gold Butterfly Press On Nails  Luxury Long Coffin Set",
     vendor: "Amelara Beauty",
     category: "cosmetics",
     price: 24.99,
@@ -116,7 +116,7 @@ export const products: Product[] = [
   {
     id: "cos-002",
     slug: "yellow-blue-dot-nails",
-    name: "Yellow Blue Dot Press On Nails – Cute Short Round Nail Set",
+    name: "Yellow Blue Dot Press On Nails  Cute Short Round Nail Set",
     vendor: "Amelara Beauty",
     category: "cosmetics",
     price: 16.99,
@@ -129,7 +129,7 @@ export const products: Product[] = [
   {
     id: "cos-003",
     slug: "black-french-tip-nails",
-    name: "Black French Tip Press On Nails – Elegant Almond Nude Nail Set",
+    name: "Black French Tip Press On Nails  Elegant Almond Nude Nail Set",
     vendor: "Amelara Beauty",
     category: "cosmetics",
     price: 19.99,
@@ -143,7 +143,7 @@ export const products: Product[] = [
   {
     id: "cos-004",
     slug: "rose-gold-glitter-nails",
-    name: "Rose Gold Glitter Press On Nails – Glamorous Long Coffin Set",
+    name: "Rose Gold Glitter Press On Nails  Glamorous Long Coffin Set",
     vendor: "Amelara Beauty",
     category: "cosmetics",
     price: 22.99,
